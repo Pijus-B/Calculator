@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <script>
-      console.warn = () => {};
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="calcBody">
-      <div class="px-8 py-8">
-        <div class="flex mb-1 justify-end">
-          <div class="output">
-            <div class="previousNumber"></div>
-            <div class="currentNumber">0</div>
-          </div>
-          <button class="clear">AC</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calculator">
+            <div class="screen">
+                <div id="screen-top"></div>
+                <div id="screen-bottom">0</div>
+            </div>
+            <div class="button-pad">
+                <div class="button-pad-row">
+                    <div class="button-pad-btn clear" id="clear-entry">CE</div>
+                    <div class="button-pad-btn clear" id="clear-all">C</div>
+                    <div class="button-pad-btn clear" id="undo">&#9003;</div>
+                    <div class="button-pad-btn operator">/</div>
+                </div>
+                <div class="button-pad-row">
+                    <div class="button-pad-btn number">7</div>
+                    <div class="button-pad-btn number">8</div>
+                    <div class="button-pad-btn number">9</div>
+                    <div class="button-pad-btn operator">x</div>
+                </div>
+                <div class="button-pad-row">
+                    <div class="button-pad-btn number">4</div>
+                    <div class="button-pad-btn number">5</div>
+                    <div class="button-pad-btn number">6</div>
+                    <div class="button-pad-btn operator">-</div>
+                </div>
+                <div class="button-pad-row">
+                    <div class="button-pad-btn number">1</div>
+                    <div class="button-pad-btn number">2</div>
+                    <div class="button-pad-btn number">3</div>
+                    <div class="button-pad-btn operator">+</div>
+                </div>
+                <div class="button-pad-row">
+                    <div class="button-pad-btn" id="change-sign">+/-</div>
+                    <div class="button-pad-btn number">0</div>
+                    <div class="button-pad-btn number">.</div>
+                    <div id="equals-btn">=</div>
+                </div>
+            </div>
         </div>
-        <div class="flex mb-1">
-          <button class="number">7</button>
-          <button class="number">8</button>
-          <button class="number">9</button>
-          <button class="operator">/</button>
-        </div>
-        <div class="flex mb-1">
-          <button class="number">4</button>
-          <button class="number">5</button>
-          <button class="number">6</button>
-          <button class="operator">x</button>
-        </div>
-        <div class="flex mb-1">
-          <button class="number">1</button>
-          <button class="number">2</button>
-          <button class="number">3</button>
-          <button class="operator">-</button>
-        </div>
-        <div class="flex mb-1">
-          <button class="decimal">.</button>
-          <button class="number">0</button>
-          <button class="equal">=</button>
-          <button class="operator">+</button>
-        </div>
-      </div>
     </div>
-  </body>
-  <script src="main.js"></script>
-  <script src="addStyles.js"></script>
+</body>
+<script src="./script.js"></script>
 </html>
